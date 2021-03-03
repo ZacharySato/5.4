@@ -21,15 +21,15 @@ public class Reader {
         int rating = book.name.replace(" ", "").length();
 
         if (book.author == null)
-            rating -= random.nextInt(10);
+            rating -= random.nextInt(100);
         else
             rating += book.author.replace(" ", "").length();
         if (book.volume == 0)
-            rating -= random.nextInt(10);
+            rating -= random.nextInt(100);
         else
             rating -= book.volume;
         if (book.pages == 0)
-            rating -= random.nextInt(10);
+            rating -= random.nextInt(100);
         else
             rating += book.pages;
 
